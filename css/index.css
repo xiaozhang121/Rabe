@@ -1,0 +1,486 @@
+/* 公共部分 */
+.w {
+    width: 80%;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.right {
+    float: right;
+}
+
+/* 导航栏部分 */
+nav {
+    height: 100px;
+    overflow: hidden;
+}
+.nav-left {
+    margin-top: 20px;
+    float: left;
+    font-family: '宋体';
+}
+.nav-right {
+    float: right;
+    margin-top: 30px;
+}
+.nav-right li {
+    float: left;
+    padding: 10px;
+    font-size: 14px;
+    font-family: '黑体';
+}
+/* 轮播图部分 */
+.scroll {
+    width: 100%;
+    height: 600px;
+    background: url(../img/lunbo.gif) no-repeat;
+    background-size:100% 100%;
+    position: relative;
+}
+.scroll img {
+    height: 500px;
+    width: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/* 文字分隔部分 */
+.divide {
+    /* height: 100px; */
+    margin: 0 auto;
+}
+/* .divide h1 {
+   
+} */
+.divide div:first-child {
+    font-size: 24px;
+   padding: 60px 0 10px 0;
+    text-align: center;
+    font-family: '宋体';
+    font-weight: 700;
+}
+.divide div:last-child {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+/* tab切换部分 */
+.tab {
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+.tab-left{
+    width: 48%;
+    height: 420px;
+    float: left;
+}
+.tab_con {
+    float: right;
+    /* margin-left: 700px; */
+    width: 50%;
+    height: 420px;
+}
+
+.tab_btns {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.tab_btns input:nth-child(3){
+    margin-right: 0;
+}
+.tab_btns input {
+    flex: 1;
+    float: left;
+    height: 50px;
+    background: #ddd;
+    border: 0px;
+    outline: none;
+    margin-right: 2px;
+    color: white;
+}
+.tab_btns .active {
+    background: rgb(79, 169, 152);
+    color: white;
+}
+/* tab内容区域 */
+.tab_cons {
+    height: 300px;
+}
+.text_dec h3{
+    font-size: 16px;
+    padding: 20px 0;
+}
+.tab_cons .date {
+    font-size: 14px;
+    color: rgb(79, 169, 152);
+    margin-bottom: 20px;
+}
+.tab_cons .detail {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.tab_cons .none {
+    height: 300px;
+    display: none;
+    font-size: 30px;
+}
+
+.tab_cons .current {
+    display: block;
+}
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: #ccc;
+    margin: 40px 0;
+}
+.point {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(79, 169, 152);
+    position: relative;
+    top: -5px;
+}
+/* 下部分文字主体 */
+.news_title .item_news {
+    width: 100%;
+    font-size: 14px;
+    font-family: '黑体';
+    margin-top: 10px;
+}
+.item_news img {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+.news_title .item_news:hover {
+    cursor: pointer;
+   color: rgb(79, 169, 152);
+}
+/* 走进本管 */
+.enter {
+    padding: 60px;
+    background-color: rgb(233, 233, 233);
+}
+.enter_title {
+    text-align: center;
+    font-size: 24px;
+
+}
+.enter_us {
+    text-align: center;
+    color: #777777;
+    /* font-size: 14px; */
+    font-family: '黑体';
+    margin: 20px auto 20px;
+}
+.enter_text {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.enter_more {
+    color: #4FA997;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* 文字图片部分 */
+.enter_img {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.img_left {
+    width: 55%;
+    height: 400px;
+    float: left;
+}
+.img_right {
+    width: 45%;
+    float: right;
+    height: 200px;
+}
+.title_right {
+    height: 200px;
+    float: right;
+    width: 45%;
+    padding: 0 0 0 20px;
+}
+.title_right h3 {
+    padding: 20px 0;
+}
+/* 陈列展览 */
+.display {
+    padding: 60px 0 40px 0;
+}
+.cl{
+    font-size: 24px;
+    font-family: '宋体';
+    font-weight: 700;
+}
+.exh{
+    padding: 10px 0 0 0;
+    color: #777777;
+}
+.display div:nth-child(3){
+    float: right;
+    width: 100%;
+}
+.read img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.display .more {
+    float: right;
+    margin-bottom: 30px;
+}
+.more span {
+    color: #777777;
+    font-size: 16px;
+}
+.dis_pic {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    width: 100%;
+}
+.dis_pic .dis_one{
+    flex: 1;
+    margin-right: 30px;
+}
+.dis_pic .dis_one:last-child {
+    margin: 0;
+}
+.dis_pic .dis_one img {
+    width: 100%;
+    height: 200px;
+    vertical-align: middle;
+}
+.one_bottom {
+    padding: 20px 20px 10px 20px;
+    border: 1px solid #ccc;
+}
+.bottom_text {
+    font-family: '黑体';
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.bottom-details {
+    padding: 10px 0 0 0;
+    font-size: 14px;
+    color: #777777;
+}
+.bottom-details img {
+    float: right!important;
+    width: 30px!important;
+    height: 10px!important;
+    margin-top: 5px;
+}
+.labei {
+    height: 500px;
+    width:100%;
+    background: url(../img/lbrj.gif);
+    background-size: 100% 100%;
+}
+.inter {
+    padding: 60px 0;
+}
+.tab_inter button{
+    width: 200px;
+    height: 50px;
+    background-color: #ccc;
+    outline: none;
+}
+/* 国际交流tab */
+/* tab切换部分 */
+.inter_con {
+    width: 100%;
+    /* height: 420px; */
+    margin-top: 20px;
+}
+
+.inter_btns {
+    height: 50px;
+    /* display: flex;
+    justify-content: space-between; */
+    width: 100%;
+}
+.inter_btns div:nth-child(3){
+    margin-right: 0;
+}
+.inter_btns div {
+    text-align: center;
+    line-height: 50px;
+    width: 185px;
+    height: 45px;
+    float: left;
+    height: 50px;
+    background: #ddd;
+    border: 0px;
+    outline: none;
+    margin-right: 2px;
+    color: white;
+}
+.inter_cons {
+    /* height: 300px; */
+    
+}
+
+
+.inter_btns .active {
+    background: rgb(79, 169, 152);
+    color: white;
+}
+.inter_cons .current {
+    display: block!important;
+}
+.inter_cons .none {
+    /* height: 300px; */
+    text-align: center;
+    display: none;
+    font-size: 30px;
+}
+.china {
+    padding: 30px 30px 30px 0;
+    overflow: hidden;
+    width: 70%;
+}
+.china img {
+    width: 350px;
+    height: 300px;
+    float: left;
+    margin-right: 20px;
+}
+.inter_cons .main {
+    float: left;
+}
+.inter_cons .main h3{
+    font-size: 16px;
+}
+.main {
+    width: 350px;
+}
+.main .date {
+    color: rgb(79, 169, 152);
+    font-size: 14px;
+    text-align: left;
+    padding: 10px;
+}
+.main .line {
+    margin: 20px 0;
+}
+.main .detail {
+    font-size: 14px;
+    color: #777777;
+}
+.main_text {
+    width: 60%;
+    float: left;
+    font-size: 14px;
+    color: #777777;
+    line-height: 1.5;
+}
+.cir {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-top: 40px;
+}
+.cir img {
+    width: 100%;
+    height: 100%;
+}
+.jump {
+    width: 100%;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.jump_one {
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+.jump_one .txt {
+    margin-top: 20px;
+    font-weight: 700;
+    font-family: '宋体';
+}
+/* 友情链接 */
+.link {
+    padding: 30px;
+    background-color: rgb(237, 237, 237);
+}
+.link-title {
+    margin-bottom: 20px;
+}
+.link a {
+    color: #ccc;
+    margin-right: 10px;
+    font-size: 14px;
+}
+footer {
+    height: 350px;
+    position: relative;
+    padding: 30px 0;
+    background-color: rgb(34, 34, 34);
+    overflow: hidden;
+    width: 100%;
+}
+footer ul {
+    justify-content: space-between;
+    float: right;
+    margin-right: 100px;
+}
+footer ul li {
+    color: rgb(117, 117, 117);
+}
+footer .first {
+    margin-bottom: 40px;
+
+} 
+.footer_link {
+    overflow: hidden;
+}
+.erweima {
+    position: absolute;
+    width: 550px;
+    height: 250px;
+    background-color: rgb(53, 92, 85);
+    left: 0;
+    top: 0;
+}
+.erweima .pic {
+   position: absolute;
+   left: 38%;
+   top: 14%;
+}
+.pic img {
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+}
+.pic ol{
+   display: inline-block;
+   list-style: none;
+   margin-left: 10px;
+}
+.pic ol .fir {
+    margin-bottom: 20px;
+    color: white;
+}
+.pic ol li{
+    color: rgb(195, 194, 194);
+ }

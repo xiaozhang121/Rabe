@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- 导航栏部分 -->
+    <nav class="w">
+        <div class="nav-left">
+            <h1>南京大学拉贝纪念馆</h1>
+            <div>Nanjing Uni</div>
+        </div>
+        <ul class="nav-right">
+            <li>首页</li>
+            <li>走进本管</li>
+            <li>走进本管</li>
+            <li>走进本管</li>
+            <li>走进本管</li>
+            <li>走进本管</li>
+            <li>走进本管</li>
+            <li>走进本管</li>
+            <li>走进本管</li>
+            <li>走进本管</li>
+            <li>走进本管</li>
+        </ul>
+    </nav>
+    <!-- 轮播图部分 -->
+    <div class="scroll">
+        <img src="img/time.gif" alt="">
+    </div>
+    <!-- 文字分隔部分 -->
+    <div class="divide">
+        <div>资讯信息</div>
+        <div>news</div>
+    </div>
+    <!-- tab切换 -->
+    <div class="tab w">
+        <div class="tab-left">
+            <img src="img/tab.gif" alt="">
+        </div>
+        <div class="tab_con">
+            <div class="tab_btns">
+                <input type="button" value="最新动态" class="active">
+                <input type="button" value="活动发布">
+                <input type="button" value="和平聚焦">
+            </div>
+            <div class="tab_cons">
+                <div class="current text_dec none">
+                    <!-- 上部分文字主体 -->
+                    <h3>拉贝纪念馆应邀参加第九届国际和平博物馆年会</h3>
+                    <div class="date">2019-05-05</div>
+                    <div class="detail">2017年4月10至13日，国际和平博物馆协会年会即“城市，生动的和平博物馆”国际学术研讨会在北爱尔兰贝尔法斯特城召开，本次会议由国际和平博物馆协会主办.
+                    </div>
+                    <div class="detail">南京大学拉贝纪念馆为该组织会员,一行3人应邀参加了本次会议,并由杨善友主任及自愿者王宇超以"拉贝日记</div>
+                    <!-- 分割线 -->
+                    <div class="line">
+                        <div class="point"></div>
+                    </div>
+                    <!-- 下部分文字主体 -->
+                    <div class="news_title">
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="none">活动发布内容</div>
+                <div class="none">和平聚焦内容</div>
+            </div>
+            <script>
+                var btn = document.getElementsByTagName('input');
+                var dv = document.querySelectorAll('.tab_cons>div')
+                //遍历按钮元素
+                for (let i = 0; i < btn.length; i++) {
+                    //btn[i].index = i;
+                    btn[i].onclick = function () {
+                        for (var j = 0; j < btn.length; j++) {
+                            btn[j].classList.remove('active');
+                            dv[j].classList.remove('current');
+                        }
+                        this.classList.add('active');
+                        //dv[this.index].classList.add('current');
+                        dv[i].classList.add('current');
+                    }
+                }
+                //为元素添加自定义属性index
+                //再循环下边的元素 是下面的元素与上面的元素一一对应
+            </script>
+        </div>
+    </div>
+    <!-- 走进本管 -->
+    <div class="enter">
+        <div class="w">
+            <div class="enter_title">走进本管</div>
+            <div class="enter_us">About us</div>
+            <div class="enter_text">南京市广州路小粉桥1 号，是1932至1938年间德国西门子公司驻南京代表处代表约翰.拉贝先生的住宅。南京沦陷后，这里成为南京南京市广州路小粉桥1
+                号，是1932至1938年间德国西门子公司驻南京代表处代表约翰.拉贝先生的住宅。南京沦陷后，这里成为南京</div>
+            <div class="enter_more">【 查看更多 】</div>
+            <div class="enter_img">
+                <div class="img_left">
+                    <img src="img/bgjs.gif" alt="">
+                </div>
+                <div class="img_right">
+                    <img src="img/gjly.gif" alt="">
+                </div>
+                <div class="title_right">
+                    <h3>最新公告</h3>
+                    <div class="news_title">
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 陈列展览 -->
+    <div class="display w">
+        <div class="cl">陈列展览</div>
+        <div class="exh">Exhibition</div>
+        <div class="read">
+            <div class="more"><img src="img/read.gif" alt=""><span> Read more </span></div>
+        </div>
+        <div class="dis_pic">
+            <div class="dis_one">
+                <img src="img/clzl.gif" alt="">
+                <div class="one_bottom">
+                    <div class='bottom_text'>南京国际安全区历史影像展区</div>
+                    <div class="bottom-details">Details
+                        <img src="img/jt.gif" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="dis_one">
+                <img src="img/clzl.gif" alt="">
+                <div class="one_bottom">
+                    <div class='bottom_text'>南京国际安全区历史影像展区</div>
+                    <div class="bottom-details">Details
+                        <img src="img/jt.gif" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="dis_one">
+                <img src="img/clzl.gif" alt="">
+                <div class="one_bottom">
+                    <div class='bottom_text'>南京国际安全区历史影像展区</div>
+                    <div class="bottom-details">Details
+                        <img src="img/jt.gif" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 拉贝日记 -->
+    <div class="labei">
+    </div>
+    <!-- 国际交流 -->
+    <div class="inter w">
+        <div class="cl">国际交流</div>
+        <div class="exh">International Exchange</div>
+        <!-- 国际交流tab栏切换 -->
+        <div class="inter_con">
+            <div class="inter_btns">
+                <div class="active but">中德友好关系</div>
+                <div class="but">和平交流行动</div>
+            </div>
+            <div class="inter_cons">
+                <div class="current none">
+                    <div class="china">
+                        <img src="img/gjjl.gif" alt="">
+                        <div class="main">
+                            <h3>拉贝纪念馆应邀参加第九届国际和平博物馆年会</h3>
+                            <div class="date">2019-05-05</div>
+                            <div class="line">
+                                <div class="point"></div>
+                            </div>
+                            <!-- <div class="detail">xx</div> -->
+                        </div>
+                        <div class="main_text">
+                            2017年4月10至13日，国际和平博物馆协会年会即“城市，生动的和平博物馆”国际学术研讨会在北爱尔兰贝尔法斯特城召开，本次会议由国际和平博物馆协会主办.
+                        </div>
+                        <div class="main_text">南京大学拉贝纪念馆为该组织会员,一行3人应邀参加了本次会议,并由杨善友主任及自愿者王宇超以"拉贝日记</div>
+                        <div class="cir">
+                            <img src="img/cir.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="none">按钮二对应的内容</div>
+            </div>
+        </div>
+        <script>
+            var bt = document.getElementsByClassName('but');
+            var di = document.querySelectorAll('.inter_cons>div')
+            //遍历按钮元素
+            for (let i = 0; i < bt.length; i++) {
+                //btn[i].index = i;
+                bt[i].onclick = function () {
+                    for (var j = 0; j < bt.length; j++) {
+                        bt[j].classList.remove('active');
+                        di[j].classList.remove('current');
+                    }
+                    console.log(this)
+                    this.classList.add('active');
+                    di[i].classList.add('current');
+                }
+            }
+            //为元素添加自定义属性index
+            //再循环下边的元素 是下面的元素与上面的元素一一对应
+        </script>
+        <!-- 国际交流跳转 -->
+        <div class="jump">
+            <div class="jump_one">
+                <div><img src="img/gj.gif" alt=""></div>
+                <div class="txt">故居导览</div>
+            </div>
+            <div class="jump_one">
+                <div><img src="img/gj.gif" alt=""></div>
+                <div class="txt">故居导览</div>
+            </div>
+            <div class="jump_one">
+                <div><img src="img/gj.gif" alt=""></div>
+                <div class="txt">故居导览</div>
+            </div>
+            <div class="jump_one">
+                <div><img src="img/gj.gif" alt=""></div>
+                <div class="txt">故居导览</div>
+            </div>
+            <div class="jump_one">
+                <div><img src="img/gj.gif" alt=""></div>
+                <div class="txt">故居导览</div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 友情链接 -->
+    <div class="link">
+        <div class="w">
+            <div class="link-title">友情链接</div>
+            <a href="#">南京大学档案馆</a>
+            <a href="#">南京大学档案馆</a>
+            <a href="#">南京大学档案馆</a>
+            <a href="#">南京大学档案馆</a>
+            <a href="#">南京大学档案馆</a>
+            <a href="#">南京大学档案馆</a>
+        </div>
+    </div>
+    <!-- 底部导航 -->
+    <footer>
+        <div class="erweima">
+            <div class="pic">
+                <img src="img/二维码.gif" alt="">
+                <ol>
+                    <li class="fir">联系我们</li>
+                    <li>电话: 123456</li>
+                    <li>电话: 123456</li>
+                    <li>电话: 123456</li>
+                </ol>
+            </div>
+
+        </div>
+        <div class="w">
+            <div class="footer_link">
+
+                <ul>
+                    <li class="first">
+                        <b>走进本管</b>
+                    </li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                </ul>
+                <ul>
+                    <li class="first">
+                        <b>走进本管</b>
+                    </li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                </ul>
+                <ul>
+                    <li class="first">
+                        <b>走进本管</b>
+                    </li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                </ul>
+                <ul>
+                    <li class="first">
+                        <b>走进本管</b>
+                    </li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                </ul>
+                <ul>
+                    <li class="first">
+                        <b>走进本管</b>
+                    </li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                </ul>
+                <ul>
+                    <li class="first">
+                        <b>走进本管</b>
+                    </li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                </ul>
+                <ul>
+                    <li class="first">
+                        <b>走进本管</b>
+                    </li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                    <li>本管概括</li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
