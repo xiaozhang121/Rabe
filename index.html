@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="fonts/iconfont.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/website.css" media="all" />
 </head>
 
 <body>
@@ -34,9 +35,45 @@
         </ul>
     </nav>
     <!-- 轮播图部分 -->
-    <div class="scroll">
-        <!-- <img src="img/time.gif" alt=""> -->
+    <div class="wrp">
+        <div class="banner" id="slide">
+            <ul id="picList">
+                <li class="slide_li first">
+                    <!-- <div class="imgBg_home"></div> -->
+                    <img class="slide_img" src="img/lb.gif" />
+                </li>
+                <li class="slide_li">
+                    <!-- <div class="imgBg_air"></div> -->
+                    <img class="slide_img" src="img/lb.gif" />
+                    <!-- <img class="slide_img airBottom" src="images/airBottom.png" /> -->
+                </li>
+                <li class="slide_li">
+                    <!-- <div class="imgBg_work"></div> -->
+                    <img class="slide_img" src="img/lb.gif" />
+                </li>
+            </ul>
+            <div id="slideThumb"></div>
+        </div>
+        <div class="fix_pos" id="time">
+            <img src="img/time.gif" alt="">
+        </div>
     </div>
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="js/banner.js"></script>
+    <!-- 监听屏幕距离 当大于某个距离时 将绝对定位改为固定定位 -->
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                //获取垂直滚动的距离
+                var scrollTop = $(document).scrollTop();
+                if (scrollTop >= 600) {
+                    $("#time").removeClass('fix_pos').addClass('fix_fix');
+                } else {
+                    $('#time').removeClass('fix_fix').addClass('fix_pos');
+                }
+            });
+        });
+    </script>
     <!-- 文字分隔部分 -->
     <div class="divide">
         <div>资讯信息</div>
@@ -49,9 +86,9 @@
         </div>
         <div class="tab_con">
             <div class="tab_btns">
-                <input type="button" value="最新动态" class="active">
-                <input type="button" value="活动发布">
-                <input type="button" value="和平聚焦">
+                <input type="button" value="最新动态" class="active" style="cursor: pointer;">
+                <input type="button" value="活动发布" style="cursor: pointer;">
+                <input type="button" value="和平聚焦" style="cursor: pointer;">
             </div>
             <div class="tab_cons">
                 <div class="current text_dec none">
@@ -94,8 +131,86 @@
                         </div>
                     </div>
                 </div>
-                <div class="none">活动发布内容</div>
-                <div class="none">和平聚焦内容</div>
+                <div class="none">
+                    <!-- 上部分文字主体 -->
+                    <h3>拉贝纪念馆</h3>
+                    <div class="date">2019-05-05</div>
+                    <div class="detail">2017年4月10至13日，国际和平博物馆协会年会即“城市，生动的和平博物馆”国际学术研讨会在北爱尔兰贝尔法斯特城召开，本次会议由国际和平博物馆协会主办.
+                    </div>
+                    <div class="detail">南京大学拉贝纪念馆为该组织会员,一行3人应邀参加了本次会议,并由杨善友主任及自愿者王宇超以"拉贝日记</div>
+                    <!-- 分割线 -->
+                    <div class="line">
+                        <div class="point"></div>
+                    </div>
+                    <!-- 下部分文字主体 -->
+                    <div class="news_title">
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="none">
+                    <!-- 上部分文字主体 -->
+                    <h3>拉贝</h3>
+                    <div class="date">2019-05-05</div>
+                    <div class="detail">2017年4月10至13日，国际和平博物馆协会年会即“城市，生动的和平博物馆”国际学术研讨会在北爱尔兰贝尔法斯特城召开，本次会议由国际和平博物馆协会主办.
+                    </div>
+                    <div class="detail">南京大学拉贝纪念馆为该组织会员,一行3人应邀参加了本次会议,并由杨善友主任及自愿者王宇超以"拉贝日记</div>
+                    <!-- 分割线 -->
+                    <div class="line">
+                        <div class="point"></div>
+                    </div>
+                    <!-- 下部分文字主体 -->
+                    <div class="news_title">
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <script>
                 var btn = document.getElementsByTagName('input');
@@ -161,6 +276,11 @@
                             <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
                             <span class="right">2020-05-15</span>
                         </div>
+                        <div class="item_news">
+                            <img src="img/flower.gif" alt="">
+                            <span>拉贝纪念馆应邀参加第九届国际和平博物馆年会</span>
+                            <span class="right">2020-05-15</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -179,25 +299,25 @@
                 <div class="one_bottom">
                     <div class='bottom_text'>南京国际安全区历史影像展区</div>
                     <div class="bottom-details">Details
-                        <img src="img/jt.gif" alt="">
+                        <img src="img/jt.gif" alt="" class="jt">
                     </div>
                 </div>
             </div>
             <div class="dis_one">
-                <img src="img/clzl.gif" alt="">
+                <img src="img/clzltwo.gif" alt="">
                 <div class="one_bottom">
                     <div class='bottom_text'>南京国际安全区历史影像展区</div>
                     <div class="bottom-details">Details
-                        <img src="img/jt.gif" alt="">
+                        <img src="img/jt.gif" alt="" class="jt">
                     </div>
                 </div>
             </div>
             <div class="dis_one">
-                <img src="img/clzl.gif" alt="">
+                <img src="img/clzlthree.gif" alt="">
                 <div class="one_bottom">
                     <div class='bottom_text'>南京国际安全区历史影像展区</div>
                     <div class="bottom-details">Details
-                        <img src="img/jt.gif" alt="">
+                        <img src="img/jt.gif" alt="" class="jt">
                     </div>
                 </div>
             </div>
@@ -206,6 +326,23 @@
     </div>
     <!-- 拉贝日记 -->
     <div class="labei">
+        <div class="bla">
+            <div style="width: 100vw;height: 550px;">
+                <div class="son w">
+                    <h3>拉贝日记</h3>
+                    <div style="height:1px;width:40px;margin-bottom:30px;background-color: rgb(79,169,152)"></div>
+                    <div class="dia">南京市广州路小粉桥1 号，是1932至1938年间德国西门子公司驻南京代表处代表约翰.拉贝先生的住宅。南京沦陷后，这里成为南京南京市广州路小粉桥1
+                        号，是1932至1938年间德国西门子公司驻南京代表处代表约翰.拉贝先生的住宅。南京沦陷后，这里成为南京南京市广州路小粉桥1
+                        号，是1932至1938年间德国西门子公司驻南京代表处代表约翰.拉贝先生的住宅。南京沦陷后，这里成为南京</div>
+                    <br>
+                    <br>
+                    <div class="dia" style="text-indent: 2em;">南京市广州路小粉桥1
+                        号，是1932至1938年间德国西门子公司驻南京代表处代表约翰.拉贝先生的住宅。南京沦陷后，这里成为南京</div>
+                    <div class="dia_cir"><img src="img/cir.gif" alt="" class="dia_cir"></div>
+                </div>
+
+            </div>
+        </div>
     </div>
     <!-- 国际交流 -->
     <div class="inter w">
@@ -234,7 +371,7 @@
                         </div>
                         <div class="main_text">南京大学拉贝纪念馆为该组织会员,一行3人应邀参加了本次会议,并由杨善友主任及自愿者王宇超以"拉贝日记</div>
                         <div class="cir">
-                            <img src="img/cir.gif" alt="">
+                            <img src="img/cir.gif" alt="" class="cir">
                         </div>
                     </div>
                     <div class="china_list">
@@ -252,9 +389,8 @@
                 </div>
                 <div class="none">
                     <div class="current none">
-                        <div>和平交流行动对应内容</div>
                         <div class="china">
-                            <img src="img/gjjl.gif" alt="">
+                            <img src="img/clzltwo.gif" alt="">
                             <div class="main">
                                 <h3>拉贝纪念馆应邀参加第九届国际和平博物馆年会</h3>
                                 <div class="date">2019-05-05</div>
@@ -308,23 +444,23 @@
         <!-- 国际交流跳转 -->
         <div class="jump">
             <div class="jump_one">
-                <div><img src="img/gj.gif" alt=""></div>
+                <div><img src="img/gj.gif" alt="" class="gj"></div>
                 <div class="txt">故居导览</div>
             </div>
             <div class="jump_one">
-                <div><img src="img/gj.gif" alt=""></div>
+                <div><img src="img/gj.gif" alt="" class="gj"></div>
                 <div class="txt">故居导览</div>
             </div>
             <div class="jump_one">
-                <div><img src="img/gj.gif" alt=""></div>
+                <div><img src="img/gj.gif" alt="" class="gj"></div>
                 <div class="txt">故居导览</div>
             </div>
             <div class="jump_one">
-                <div><img src="img/gj.gif" alt=""></div>
+                <div><img src="img/gj.gif" alt="" class="gj"></div>
                 <div class="txt">故居导览</div>
             </div>
             <div class="jump_one">
-                <div><img src="img/gj.gif" alt=""></div>
+                <div><img src="img/gj.gif" alt="" class="gj"></div>
                 <div class="txt">故居导览</div>
             </div>
         </div>

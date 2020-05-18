@@ -1,6 +1,6 @@
 /* 公共部分 */
 .w {
-    width: 80%;
+    width: 1500px;
     margin: 0 auto;
 }
 img {
@@ -17,7 +17,7 @@ nav {
     overflow: hidden;
 }
 .nav-left {
-    margin-top: 20px;
+    margin-top: 25px;
     float: left;
     font-family: '宋体';
 }
@@ -40,19 +40,28 @@ nav {
     vertical-align: top;
 }
 /* 轮播图部分 */
-.scroll {
-    width: 100%;
-    height: 600px;
-    background: url(../img/lunbo.gif) no-repeat;
-    background-size:100% 100%;
+.wrp {
     position: relative;
 }
-.scroll img {
-    height: 500px;
-    width: 200px;
+.slide_img {
+    width: 100%!important;
+    height: 600px;
+}
+.fix_pos {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 1px;
+    z-index: 10;
+    width: 210px;
+    height: 500px;
+}
+.fix_fix {
+    position: fixed;
+    right: 0;
+    bottom: 153px;
+    z-index: 10;
+    width: 210px;
+    height: 500px;
 }
 /* 文字分隔部分 */
 .divide {
@@ -153,7 +162,7 @@ nav {
     border-radius: 50%;
     background-color: rgb(79, 169, 152);
     position: relative;
-    top: -5px;
+    top: -4px;
 }
 /* 下部分文字主体 */
 .news_title .item_news {
@@ -186,7 +195,7 @@ nav {
     color: #777777;
     /* font-size: 14px; */
     font-family: '黑体';
-    margin: 20px auto 20px;
+    margin: 10px auto 20px;
 }
 .enter_text {
     width: 80%;
@@ -210,22 +219,24 @@ nav {
 }
 .img_left {
     width: 55%;
-    height: 400px;
+    height: 560px;
     float: left;
 }
 .img_right {
     width: 45%;
     float: right;
-    height: 200px;
+    height: 275px;
 }
 .title_right {
-    height: 200px;
+    height: 285px;
     float: right;
     width: 45%;
-    padding: 0 0 0 20px;
+    padding: 0 30px 0 30px;
+    background-color: white;
 }
 .title_right h3 {
-    padding: 20px 0;
+    padding: 40px 0;
+    font-size: 24px;
 }
 /* 陈列展览 */
 .display {
@@ -273,7 +284,7 @@ nav {
 }
 .dis_pic .dis_one img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     vertical-align: middle;
 }
 .one_bottom {
@@ -297,10 +308,56 @@ nav {
     margin-top: 5px;
 }
 .labei {
-    height: 500px;
+    height: 550px;
     width:100%;
-    background: url(../img/lbrj.gif);
+    background: url(../img/rabe.gif);
     background-size: 100% 100%;
+    position: relative;
+}
+.son {
+    padding: 50px 0;
+}
+.son h3 {
+    font-size: 22px;
+    padding: 20px 0;
+    color: white;
+    font-family: '宋体';
+    position: relative;
+}
+.dia_cir {
+    /* position: absolute;
+    left: 0;
+    bottom: 20px; */
+    margin-top: 50px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.dia_cir img {
+    width: 100%;
+    height: 100%;
+}
+
+.dia {
+    width: 600px;
+    color: white;
+    line-height: 2;
+}
+.rabe {
+    background-color: rgb(79, 169, 152);
+    z-index: 9999;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.bla {
+    height: 550px;
+    width: 800px;
+    background: url(../img/bla.gif);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
 }
 .inter {
     padding: 60px 0;
@@ -341,6 +398,10 @@ nav {
     margin-right: 2px;
     color: white;
 }
+.none h3 {
+    padding: 20px 0;
+    font-size: 16px;
+}
 .inter_cons {
     /* height: 300px; */
     
@@ -348,7 +409,7 @@ nav {
 
 
 .inter_btns .active {
-    background: rgb(79, 169, 152);
+    background: rgb(79, 169, 152)!important;
     color: white;
 }
 .inter_cons .current {
@@ -363,7 +424,7 @@ nav {
 .china {
     padding: 30px 30px 30px 0;
     overflow: hidden;
-    width: 70%;
+    width: 75%;
     float: left;
 }
 .china img {
@@ -379,7 +440,7 @@ nav {
 }
 .china_list {
     float: right;
-    width: 30%;
+    width: 25%;
 }
 .china_list h3 {
     text-align: left;
@@ -392,6 +453,9 @@ nav {
     text-align: left;
     color: #333;
     cursor: pointer;
+}
+.china_list ul li:hover {
+    color: rgb(79, 169, 152);
 }
 .china_list ul li:first-child{
     padding-top: 0;
@@ -429,7 +493,7 @@ nav {
     width: 50px;
     height: 50px;
     float: left;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .cir img {
     width: 100%;
@@ -450,6 +514,7 @@ nav {
     margin-top: 20px;
     font-weight: 700;
     font-family: '宋体';
+    text-align: center;
 }
 /* 友情链接 */
 .link {
@@ -480,14 +545,14 @@ footer {
 footer ul {
     justify-content: space-between;
     float: right;
-    margin-right: 100px;
+    margin-right: 80px;
 }
 footer ul:first-child {
     margin-right: 0;
 }
 footer ul li {
     color: rgb(117, 117, 117);
-    font-size: 16px;
+    font-size: 14px;
     font-family: '黑体';
     line-height: 1.5;
 }
@@ -512,7 +577,7 @@ footer .first {
 }
 .erweima .pic {
    position: absolute;
-   left: 38%;
+   left: 20%;
    top: 14%;
 }
 .pic img {
@@ -533,13 +598,14 @@ footer .first {
     color: rgb(195, 194, 194);
     font-family: '黑体';
     line-height: 1.5;
+    font-size: 14px;
  }
  footer .btm {
     color: rgb(117, 117, 117);
     font-size: 14px;
     text-align: left;
     position: absolute;
-    left: 205px;
+    left: 7%;
     bottom: 40px;
  }
  footer .number{
@@ -552,3 +618,118 @@ footer .first {
  .number span {
      color: white;
  }
+
+ /* 轮播 */
+ a {
+    text-decoration: none;
+    outline: none;
+    color: #666666;
+  }
+
+  a:hover {
+    text-decoration: none
+  }
+
+  img {
+    border: 0
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  h2 {
+    color: #6CBD45;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 13px;
+    font-weight: bold;
+
+
+  }
+
+  #show {
+    background: url(images/photo.jpg)
+  }
+
+  #meun1 {
+    color: #fff;
+    padding-left: 10px;
+  }
+
+  #meun1 img {
+    float: left;
+  }
+
+  #submeun1 {
+    margin-left: 70px;
+    float: left;
+  }
+
+  #submeun1 li {
+    text-align: center;
+    margin-right: 10px;
+    float: left;
+    display: inline;
+  }
+
+  #submeun1 li a {
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block;
+  }
+
+  #submeun1 li.cur {
+    text-align: center;
+    background: #82ce18;
+    margin-right: 10px;
+    float: left;
+    display: inline;
+  }
+
+  #top1 {
+    background-color: #000;
+    margin: 0em 0 10px 0em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E5E5E5;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  div.subtitle {
+    font-size: 13px;
+    float: right;
+    color: #6CBD45;
+    margin: 0 10px;
+    text-align: right;
+  }
+
+  h1.title {
+    height: 50px;
+    font-size: 12px;
+    background: url(logo.png) no-repeat;
+
+  }
+
+  h1.title a:link,
+  h1.title a:visited,
+  h1.title a:hover {
+    color: #000;
+    text-decoration: none;
+  }
+  .jt,.cir,.gj,footer li,.but{
+      cursor: pointer;
+  }
